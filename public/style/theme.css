@@ -4,44 +4,32 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
-    text-decoration: none;
-    scrollbar-width: none;
 }
 
 body { 
-    font-size: 16px;
-    color: #333;
-    background-color: #f4f4f4;
-    line-height: 1.6;
-    background: url(/Code--/img/wlaaabanana.jpg);
-}
-h3{color: white;}
-
-.btn-nav {
-    height: 10px;
-    width: 180px;
-
+    background: url(/public/img/wallban123.jpg);
 }
 
-button {
-    border: solid 1px;
-    border-radius: 5px;
-    cursor: pointer;
-    border: none;
+header{
+    display: flex;  
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    backdrop-filter: blur(20px);
 }
 
-header, nav , button{
-    display: flex;
+nav ,button{
     gap: 1.5rem;
     padding: 1rem;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
     color: black;
+    cursor: pointer;
 }
 
+h3{color: white; font-size: xx-large; align-items: center; justify-content: center; display: flex; margin-bottom: 25px;}
+h1{color: antiquewhite;}
+span{color: yellow;}
+
 img{
-    
     width: 315px;
     height: 310px;
     margin: 10px;
@@ -49,6 +37,57 @@ img{
     cursor: pointer;
     box-shadow: rgb(255, 255, 255) 0px 7px 29px 0px;
 }
+
+.menu {
+    display: flex;
+    float: left;
+    width: 400px;
+    list-style: none;
+    z-index: 10000;
+}
+
+.menu li {
+    position: relative;
+    float: left;
+}
+
+.menu li ul {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    background-color: #fff;
+    display: none;
+    
+}
+
+.menu li:hover ul,
+.menu li.over ul {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 280px;
+    height: auto;
+    background-color: black;
+}
+
+.btn-nav {
+    margin: 5px;
+    width: 190px;
+    border: none;
+    font-size: xx-large;
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+}
+
+.menu li ul li select {
+    display: grid;
+    flex-direction: column;
+    width: 200px;
+    height: auto;
+    z-index: 10000;
+}
+
 
 .main-center{
     display: flex;
@@ -62,7 +101,6 @@ img{
 }
 
 .main-left{
-    color: white    ;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -70,9 +108,9 @@ img{
     flex-direction: column;
     width: 450px;   
     padding: 40px 32px;
-    border-radius: 8px;
-    background-color: rgba(255, 255, 0, 0.633);
-}
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+}   
 
 .main-right{
     display: flex;
@@ -82,15 +120,11 @@ img{
     height: auto;
     padding: 40px 32px;
     border-radius: 8px;
-    background-color: #333;
+    backdrop-filter: blur(20px);
 }
 
-.upgrade{
-    margin: 5pc;
-}
-
-.btn-{
-    display: block;
+.main-right button{
+    display: flex;
     align-items: center;
     text-align: center;
     width: 400px;
@@ -98,12 +132,21 @@ img{
     margin: 3px;
     border-radius: 10px;
     border: solid none;
+    cursor: pointer;
+
 }
 
-.vendas{
+.vendas button{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
+.upgrade button{
+    display: flex;
+    justify-content: center;
+    margin: 1pc;
+    align-items: center;
+}
