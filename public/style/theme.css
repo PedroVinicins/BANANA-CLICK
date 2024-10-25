@@ -1,0 +1,109 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    scrollbar-width: none;
+}
+
+body { 
+    font-size: 16px;
+    color: #333;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+    background: url(/Code--/img/wlaaabanana.jpg);
+}
+h3{color: white;}
+
+.btn-nav {
+    height: 10px;
+    width: 180px;
+
+}
+
+button {
+    border: solid 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+header, nav , button{
+    display: flex;
+    gap: 1.5rem;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    color: black;
+}
+
+img{
+    
+    width: 315px;
+    height: 310px;
+    margin: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: rgb(255, 255, 255) 0px 7px 29px 0px;
+}
+
+.main-center{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px auto;
+    max-width: 1300px;
+    gap: 30px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.main-left{
+    color: white    ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    flex-direction: column;
+    width: 450px;   
+    padding: 40px 32px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 0, 0.633);
+}
+
+.main-right{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 450px;
+    height: auto;
+    padding: 40px 32px;
+    border-radius: 8px;
+    background-color: #333;
+}
+
+.upgrade{
+    margin: 5pc;
+}
+
+.btn-{
+    display: block;
+    align-items: center;
+    text-align: center;
+    width: 400px;
+    height: 40px;
+    margin: 3px;
+    border-radius: 10px;
+    border: solid none;
+}
+
+.vendas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
